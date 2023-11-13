@@ -104,6 +104,7 @@ app.get("/visual", (req, res) => {
 // recommend 영역에 출력할 자료 요청
 // localhost:4000/visual
 app.get("/recommend", (req, res) => {
+  //json 내용 복붙
   const result = {
     total: 12,
     good_1: {
@@ -187,6 +188,12 @@ app.get("/recommend", (req, res) => {
       url: "go.html",
     },
   };
+  res.send(result);
+});
+
+// tour 영역에 출력할 자료 요청
+app.get("/tour", (req, res) => {
+  const result = {};
   res.send(result);
 });
 
